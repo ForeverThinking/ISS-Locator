@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_dd64bbcfcfb94ffa8891ed149d5d807e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_dd64bbcfcfb94ffa8891ed149d5d807e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_dd64bbcfcfb94ffa8891ed149d5d807e = L.map(
+                                  'map_dd64bbcfcfb94ffa8891ed149d5d807e',
+                                  {center: [-3.7602,35.1096],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_4d901b1a359d4f74961f8836eb2661b8 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_dd64bbcfcfb94ffa8891ed149d5d807e);
+        
+    
+            var feature_group_4cb9765218c94389aaac6f06d458b109 = L.featureGroup(
+                ).addTo(map_dd64bbcfcfb94ffa8891ed149d5d807e);
+        
+    
+
+            var marker_b062139a573547e6b50409a2eba3e01b = L.marker(
+                [-3.7602,35.1096],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4cb9765218c94389aaac6f06d458b109);
+            
+    
+
+                var icon_51c7e831fbd54c5d94af461859200567 = L.AwesomeMarkers.icon({
+                    icon: 'space-shuttle',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b062139a573547e6b50409a2eba3e01b.setIcon(icon_51c7e831fbd54c5d94af461859200567);
+            
+    
+            var popup_f2d5931ff8354eadb8ac806803301d74 = L.popup({maxWidth: '300'});
+
+            
+                var html_dab92eb825bd429098534251708ad01a = $('<div id="html_dab92eb825bd429098534251708ad01a" style="width: 100.0%; height: 100.0%;">Latitude: -3.760, Longitude: 35.110</div>')[0];
+                popup_f2d5931ff8354eadb8ac806803301d74.setContent(html_dab92eb825bd429098534251708ad01a);
+            
+
+            marker_b062139a573547e6b50409a2eba3e01b.bindPopup(popup_f2d5931ff8354eadb8ac806803301d74);
+
+            
+        
+</script>
